@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starbucks Coffee Component</title>
+  <style>
+    /* Main card container styling */
+    .card {
+      display: flex;
+      align-items: center;
+      padding: 16px;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      max-width: 350px;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Image styling for the coffee cups */
+    .card-image {
+      width: 60px;
+      height: 60px;
+      border-radius: 5px;
+      margin-right: 12px;
+    }
+
+    /* Content area styling */
+    .card-content {
+      flex-grow: 1;
+    }
+
+    /* Title styling */
+    .card-title {
+      font-size: 1.1em;
+      font-weight: bold;
+      color: #333;
+      margin: 0;
+    }
+
+    /* Description styling */
+    .card-description {
+      font-size: 0.9em;
+      color: #666;
+      margin: 8px 0 16px 0;
+    }
+
+    /* Button styling */
+    .add-button {
+      background-color: #00754a;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      font-size: 0.9em;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    /* Button hover effect */
+    .add-button:hover {
+      background-color: #005c3a;
+    }
+
+    /* Small logo styling */
+    .logo-icon {
+      width: 20px;
+      height: 20px;
+      margin-left: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Card Component -->
+  <div class="card">
+    <!-- Coffee cups image -->
+    <img src="coffee-cups.jpg" alt="Coffee Cups" class="card-image">
+
+    <!-- Content area with text and button -->
+    <div class="card-content">
+      <div style="display: flex; align-items: center;">
+        <h2 class="card-title">Starbucks Coffee</h2>
+        <img src="starbucks-logo.png" alt="Starbucks Logo" class="logo-icon">
+      </div>
+      <p class="card-description">Starbucks is best when shared. Treat your pals to a good cup of coffee.</p>
+      <button class="add-button">Add Item</button>
+    </div>
+  </div>
+
+</body>
+</html>

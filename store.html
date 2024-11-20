@@ -1,0 +1,182 @@
+<html>
+    <head>
+        <title>
+            starbucks
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./Starbucks.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <navbar>
+            <div class="container-navbar">
+                <div class="row">
+                    <div class="d-flex flex-row">
+                        <div class="navbar-col-one">
+                            <a href="./index.html"><img class="main-logo" src="../Starbucks-project/Images/Starbucks-logo.png"/></a>
+                        </div>
+                        <div class="navbar-col-two">
+                            <ul>
+                                <li class="navbar-items"><a class="navbar-items-styling" href="../Starbucks-project/index.html">Home</a></li>
+                                <li class="navbar-items"><a class="navbar-items-styling" href="../Starbucks-project/Gift.html">Gift</a></li>
+                                <li class="navbar-items"><a class="navbar-items-styling" href="../Starbucks-project/order.html">Order</a></li>
+                                <li class="navbar-items"><!-- Button trigger modal -->
+                                    
+                                    <a class="navbar-items-styling" data-bs-toggle="modal" data-bs-target="#exampleModal">Pay</a>
+                                    
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                      <div class="modal-dialog">
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                            
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                          </div>
+                                          <div class="modal-body">
+                                            <button class="skip-button">SKIP</button>
+                                            <h4>Login</h4>
+                                            <p class="pay-modal-headings">USERNAME</p>
+                                            <input class="pay-login-placeholders" type="text" placeholder="Enter Email ID or Mobile Number*">
+                                            <p class="pay-modal-headings">PASSWORD</p>
+                                            <input class="pay-login-placeholders" type="text" placeholder="Enter Password*">
+                                            <p class="pay-signin-text">Don't have an account? <a href="#">SignUp</a></p>
+                                            <div class="text-center">
+                                            <button class="pay-login-button">Login</button>
+                                            <p class="pay-signin-text">Facing trouble logging in? <a href="#">Get Help</a></p>
+                                            <p class="pay-signin-text"><img class="whatsapp-icon" src="./Images/WhatsApp icon.png"/> Already registered via Whatsapp? <a href="#">Continue Here</a></p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div></li>
+                                <li class="navbar-items"><a class="navbar-items-styling navbar-highlight" href="./store.html">Store</a></li>
+                            </ul>
+                        </div>
+                        <div class="navbar-col-one">
+                            <div class="container">
+                                <form class="nosubmit">
+                                    <input class="nosubmit" type="search" placeholder="Looking for something specific">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="navbar-col-one">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="navbar-profile bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </navbar>
+
+
+        
+        <div class="store-page-container d-flex">
+            <div class="store-col-one">
+                <div class="store-col-one-placeholder">
+                    <form class="nosubmit-store">
+                        <input class="nosubmit-store" type="search" placeholder="Find a store near you">
+                    </form>
+                    <img class="loc-error-img" src="./Images/loc-error.png"/>
+                    <div class="text-center">
+                        <h6>Sorry! we can't seem to spot you.</h6>
+                        <p>Please enable your location to find the nearest Starbucks</p>
+                        <button class="location-button">Enter Location Manually</button>
+                    </div>
+                </div>
+            </div>
+            <div class="store-col-two">
+                <div class="store-col-two-box">
+                <p class="red-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search store-search-icon" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                  </svg>No nearby store found.</p>
+                <p class="store-col-two-text-two">Oh no! We couldn't find any store around the provided location. Please enter a different location to get nearby stores.</p>  
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <footer class="footer-container">
+            <div class="row">
+                <div class="d-flex flex-row footer-row">
+                <div class="footer-col-one">
+                    <img class="main-logo-footer" src="../Starbucks-project/Images/Starbucks-logo.png"/>
+                </div>
+                <div class="footer-col-two">
+                    <h5 class="footer-headings">About Us</h5>
+                    <p class="footer-text">Our Heritage</p>
+                    <p class="footer-text">Coffee House</p>
+                    <p class="footer-text">Our Company</p>
+                </div>
+                <div class="footer-col-three">
+                    <h5>Responsibility</h5>
+                    <p class="footer-text">Diversity</p>
+                    <p class="footer-text">Community</p>
+                    <p class="footer-text">Ethical Sourcing</p>
+                    <p class="footer-text">Environmental Stewardship</p>
+                    <p class="footer-text">Learn More</p>
+                </div>
+                <div class="footer-col-four">
+                    <h5>Quick Links</h5>
+                    <p class="footer-text">Privacy Policy</p>
+                    <p class="footer-text">FAQs</p>
+                    <p class="footer-text">Starbucks India Mobile App Terms of Use</p>
+                    <p class="footer-text">Customer Service</p>
+                    <p class="footer-text">Delivery</p>
+                    <p class="footer-text">Season's Gifting</p>
+                    <p class="footer-text">Loyalty Program Terms and Conditions</p>
+                    <p class="footer-text">Starbucks Rewards Day Offer</p>
+                    <p class="footer-text">Beverage Subscription</p>
+                    <p class="footer-text">Diwali Bonus Star Offer</p>
+                </div>
+                <div class="footer-col-five">
+                    <h5>Social Media</h5>
+                    <ul class="footer-social-media">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                            </svg>
+                        </li>
+                        <li class="footer-social-media-two">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                            </svg>
+                        </li>
+                        <li class="footer-social-media-two">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col-six">
+                    <div class="d-flex flex-row footer-store-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+                            <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+                            <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+                        </svg>
+                        <div class="footers-store-text-cont">
+                            <p class="footer-store-box-text">DOWNLOAD ON THE</p>
+                            <h3 class="footer-store-box-text">APP STORE</h3>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row footer-store-box">
+                        <img class="footer-playstore-img" src="../Starbucks-project/Images/playstore icon.png"/>
+                        <div>
+                            <p class="footer-store-box-text">GET IT ON</p>
+                            <h3 class="footer-store-box-text">GOOGLE PLAY</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </footer>
+    </body>
+</html>
